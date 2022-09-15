@@ -1,0 +1,6 @@
+if teste = 0 ;
+a = 34 ;
+while ;
+b = 5 ;
+port4 = 10 ;
+{ } * / - ;
