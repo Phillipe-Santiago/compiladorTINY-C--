@@ -1,4 +1,4 @@
-# Integrantes do grupo
+# Integrantes do grupo A
 
 1. Daniel Carlier
 2. Phillipe
