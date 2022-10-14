@@ -1,4 +1,5 @@
 if teste = 0 ;
+/* comentario qualquer */
 a = 34 ;
 while ;
 b = 5 ;

@@ -1,8 +1,8 @@
 /*
  ============================================================================
- Nome      : entradaCodigo.c
- Autor     : Prof Clayton J A Silva - Compiladores princípios e práticas, Louden K
- Descrição : Lê código fonte de um arquivo .txt
+ Nome      : entrada.c
+ Autor     : Daniel Carlier, Phillipe Secondo e Gustavo Braga
+ Descrição : Lê código fonte de um arquivo .txt e imprime vetor de registro
  ============================================================================
  */
 
@@ -16,13 +16,13 @@
 
 char letra[] = {'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'};
 char digito[] = {'0','1','2','3','4','5','6','7','8','9'};
-char especial[] = {'+','–','*','/','<','<=','>','>=', '=', '==', '!=','/*','*/', ';', '{', '}', '.', '(', ')'};
+char especial[] = {'+','-','*','/','<','<=','>','>=', '=', '==', '!=','/*','*/', ';', '{', '}', '.', '(', ')'};
 int lenLetraArray = 52;
 int lenDigitoArray = 10;
 int lenEspecialArray = 18;
 int foundComent = FALSE;
 
-typedef enum // Definem os token da linguagem TINY adaptada
+typedef enum // Definem os token da linguagem C-- adaptada
 	{RESERVADA, SIMBOLO, ERRO, ID, NUMINT, NUMFLOAT}
 	TokenTipo;
 
@@ -67,6 +67,7 @@ int main(void) {
 	return EXIT_SUCCESS;
 }
 
+// charIsInArray Verifica se um determinado char está no array
 int charIsInArray(char charToBeFound, char array[], int lenArray) {
 	for(int i = 0; i < lenArray; i++) {
 		if (charToBeFound == array[i]) {
@@ -110,7 +111,7 @@ TokenTipo getNFA(char* tokenString) {
 		}
 	}
 
-    
+
     //Verifica exclusivamente NUMFLOAT
     if(foundDigitoOnFirst && foundDigitoOnString && !foundLetraOnString && dotCount == 1){
         returnValue = NUMFLOAT;
@@ -130,7 +131,7 @@ TokenTipo getNFA(char* tokenString) {
 		returnValue = NUMINT;
 	} else if (foundLetraOnString && !foundDigitoOnFirst){
 		returnValue = ID;
-	} 
+	}
 
 	return returnValue;
 }
@@ -138,7 +139,7 @@ TokenTipo getNFA(char* tokenString) {
 TokenTipo getToken(int pos,char linha[NMAX], int nToken, int k){
 	int i,j=0;
 	char tokenValor[NMAX];
-    
+
 	for (i=pos;i<k;i++){
         if (linha[i] == '/' && linha[i+1] == '*') {
             foundComent = TRUE;
@@ -156,7 +157,7 @@ TokenTipo getToken(int pos,char linha[NMAX], int nToken, int k){
 			i++;
 			j++;
         } else if (foundComent == TRUE) {
-			i++;
+			continue;
         } else if (linha[i] != ' ') {
             tokenValor[j] = linha[i];
             j++;
