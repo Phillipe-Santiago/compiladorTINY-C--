@@ -1,0 +1,5 @@
+main ( ) {
+int a = 21 ;
+/*           */
+/* ASDADASDASDAD */
+int B = 3.53 ;
