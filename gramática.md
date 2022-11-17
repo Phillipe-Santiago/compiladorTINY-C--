@@ -8,10 +8,10 @@
 7. *param* → *tipo-idt* **identificador**
 8. *decl-sequência* → *declaração* | *declaração* ; *declaração*
 9. *declaração* → *var-decl* | *if-decl* | *atribuição-decl* | *while-decl* | *read-decl* | *print-decl*
-10.var-decl → tipo-idt identificador
-11.tipo-idt → int | float | void
-12.if-decl → if exp { decl-sequência } [ else { decl-sequência } ]
-13.atribuição-decl → identificador = exp
+10. *var-decl* → *tipo-idt* **identificador**
+11. *tipo-idt* → **int** | **float** | **void*
+12. *if-decl* → **if** *exp* **{** *decl-sequência* **}** [ **else** **{** *decl-sequência* **}** ]
+13. *atribuição-decl* → **identificador =** *exp*
 14.while-decl → while exp { decl-sequência }
 15.read-decl → read identificador
 16.print-decl → print exp
