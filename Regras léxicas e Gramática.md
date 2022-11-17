@@ -18,7 +18,6 @@ Utiliza os _tokens_ SIMBOLO e RESERVADA, para descrever os símbolos
 especiais e palavras-chave. Utiliza, ainda, os _tokens_ ID, NUMINT e
 NUMFLOAT, que são definidos pelas expressões regulares a seguir  
 
-##
 
 ID = letra(letra|digito)*  
 
@@ -30,6 +29,16 @@ letra = a|...|z|A|...|Z
 
 dígito = 0|1|...|9
 
-##
 Existe diferença entre caixa baixa e caixa alta.  
+
+E͟s͟p͟a͟ç͟o͟s͟ e͟m͟ b͟r͟a͟n͟c͟o͟  
+Compostos por brancos, mudanças de linha e tabulações. O espaço em branco
+é ignorado, exceto como separador de IDs, NUMs e palavras-chave.  
+
+## 4. C͟o͟m͟e͟n͟t͟á͟r͟i͟o͟s͟
+São cercados pela notação usual de C /*...*/. Os comentários podem ser
+colocados em qualquer lugar que possa ser ocupado por um espaço em branco
+e só podem incluir uma linha. Comentários não podem ser aninhados.
+
+
 
