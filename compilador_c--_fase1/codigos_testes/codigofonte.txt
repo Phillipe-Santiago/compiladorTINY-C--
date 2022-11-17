@@ -1,0 +1,11 @@
+void imprime ( int var ) {
+print var ;
+}
+void main ( ) {
+int var1 ;
+int var2 ;
+int soma ;
+var1 = 10 ;
+var2 = 5 ;
+soma = var1 + var2 ;
+}
