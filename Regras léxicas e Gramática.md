@@ -1,4 +1,4 @@
-# **C͟͟͟O͟͟͟N͟͟͟V͟͟͟E͟͟͟N͟͟͟Ç͟͟͟Õ͟͟͟E͟͟͟S͟͟͟ L͟͟͟É͟͟͟X͟͟͟I͟͟͟C͟͟͟A͟͟͟S͟͟͟ D͟͟͟E͟͟͟ C͟͟͟--**
+# **C͟͟͟͟͟͟͟O͟͟͟͟͟͟͟N͟͟͟͟͟͟͟V͟͟͟͟͟͟͟E͟͟͟͟͟͟͟N͟͟͟͟͟͟͟Ç͟͟͟͟͟͟͟Õ͟͟͟͟͟͟͟E͟͟͟͟͟͟͟S͟͟͟͟͟͟͟ L͟͟͟͟͟͟͟É͟͟͟͟͟͟͟X͟͟͟͟͟͟͟I͟͟͟͟͟͟͟C͟͟͟͟͟͟͟A͟͟͟͟͟͟͟S͟͟͟͟͟͟͟ D͟͟͟͟͟͟͟A͟ C͟͟͟͟͟͟͟--**
 
 ### 1. P͟a͟l͟a͟v͟r͟a͟s͟-c͟h͟a͟v͟e͟
 As palavras-chave da linguagem são as seguintes: 
@@ -42,7 +42,7 @@ e só podem incluir uma linha. Comentários não podem ser aninhados.
 
 ##
 
-# G͟R͟A͟M͟Á͟T͟I͟C͟A͟ D͟A͟ C͟-͟-͟
+# **G͟͟͟R͟͟͟A͟͟͟M͟͟͟Á͟͟͟T͟͟͟I͟͟͟C͟͟͟A͟͟͟ D͟͟͟A͟͟͟ C͟͟͟--**
 1. *programa* → *lista-fun* **main ( ) {** *decl-sequência* **}**
 2. *lista-fun* → *lista-fun fun* | *fun*
 3. *fun* → *fun-decl* **{** *decl-sequência* | *decl-sequência* **return identificador}**
