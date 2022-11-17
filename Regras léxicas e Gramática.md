@@ -38,9 +38,11 @@ Compostos por brancos, mudanças de linha e tabulações. O espaço em branco
 ### 4. C͟o͟m͟e͟n͟t͟á͟r͟i͟o͟s͟
 São cercados pela notação usual de C /*...*/. Os comentários podem ser
 colocados em qualquer lugar que possa ser ocupado por um espaço em branco
-e só podem incluir uma linha. Comentários não podem ser aninhados.
+e só podem incluir uma linha. Comentários não podem ser aninhados.  
 
-# GRAMÁTICA DA C--
+##
+
+# G͟R͟A͟M͟Á͟T͟I͟C͟A͟ D͟A͟ C͟-͟-͟
 1. *programa* → *lista-fun* **main ( ) {** *decl-sequência* **}**
 2. *lista-fun* → *lista-fun fun* | *fun*
 3. *fun* → *fun-decl* **{** *decl-sequência* | *decl-sequência* **return identificador}**
