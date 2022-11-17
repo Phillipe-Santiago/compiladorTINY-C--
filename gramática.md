@@ -12,13 +12,13 @@
 11. *tipo-idt* → **int** | **float** | **void*
 12. *if-decl* → **if** *exp* **{** *decl-sequência* **}** [ **else** **{** *decl-sequência* **}** ]
 13. *atribuição-decl* → **identificador =** *exp*
-14.while-decl → while exp { decl-sequência }
-15.read-decl → read identificador
-16.print-decl → print exp
-17.exp → simples-exp [ comparação-op simples-exp ]
-18.comparação-op → < | > | == | != | <= | >=
-19.simples-exp → termo | termo soma termo
-20.soma → + | -
-21.termo → fator | fator mult fator
-22.mult → * | /
-23.fator → ( exp ) | número | identificador
+14. *while-decl* → **while** *exp* **{** *decl-sequência* **}**
+15. *read-decl* → **read identificador**
+16. *print-decl* → **print** *exp*
+17. *exp* → *simples-exp* [ *comparação-op simples-exp* ]
+18. *comparação-op* → **<** | **>** | **==** | **!=** | **<=** | **>=**
+19. *simples-exp* → *termo* | *termo soma termo*
+20. *soma* → **+** | **-**
+21. *termo* → *fator* | *fator mult fator*
+22. *mult* → * | **/**
+23. *fator* → **(** *exp* **)** | **número** | **identificador**
